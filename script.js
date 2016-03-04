@@ -63,56 +63,54 @@
 
 //Задание 5.1
 /*function range(a,b,c) {
-    var arr = [], i, iter;
-    if (c === 1) {
-        iter = 1;
-    } else {
-        iter = c;
-    }
-    if (c < 0) {
-        for (i = a; i >= b; i += iter) {
-            arr.push(i);
-        }
-    } else {
-        for (i = a; i <= b; i += iter) {
-            arr.push(i);
-        }
-    }
-    return arr;
-}
+ var arr = [], i, iter;
+ if (c === 1) {
+ iter = 1;
+ } else {
+ iter = c;
+ }
+ if (c < 0) {
+ for (i = a; i >= b; i += iter) {
+ arr.push(i);
+ }
+ } else {
+ for (i = a; i <= b; i += iter) {
+ arr.push(i);
+ }
+ }
+ return arr;
+ }
 
-function sum(arr) {
-    var i, sum = 0;
-    for (i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
+ function sum(arr) {
+ var i, sum = 0;
+ for (i = 0; i < arr.length; i++) {
+ sum += arr[i];
+ }
+ return sum;
+ }
 
-console.log(range(5,2,-1));*/
+ console.log(range(5,2,-1));*/
 
 //Задание 5.2
 /*function reverseArray(arr) {
-    var i, revertArr = [];
-    for (i = arr.length-1; i >= 0; i--) {
-        revertArr.push(arr[i]);
-    }
-    return revertArr;
-}
+ var i, revertArr = [];
+ for (i = arr.length-1; i >= 0; i--) {
+ revertArr.push(arr[i]);
+ }
+ return revertArr;
+ }
 
-function reverseArrayInPlace(arr) {
-    var count = Math.ceil(arr.length / 2);
-    var i, ctrl;
-    for (i = 0; i < count; i++) {
-        ctrl = arr[i];
-        arr[i] = arr[arr.length - i - 1];
-        arr[arr.length - i - 1] = ctrl;
-    }
-    return arr;
-}
+ function reverseArrayInPlace(arr) {
+ for (var i = 0; i < Math.ceil(arr.length / 2); i++) {
+ var ctrl = arr[i];
+ arr[i] = arr[arr.length - i - 1];
+ arr[arr.length - i - 1] = ctrl;
+ }
+ return arr;
+ }
 
-var arr = [0,1,2,3,4,5,6];
-console.log(reverseArray(arr));
-console.log(reverseArrayInPlace(arr));*/
+ var arr = [0,1,2,3,4,5,6];
+ console.log(reverseArray(arr));
+ console.log(reverseArrayInPlace(arr));*/
 
 //Задание 5.3
